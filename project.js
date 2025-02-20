@@ -73,7 +73,7 @@ resetBtn.onclick = function() {
     wins.textContent = winCount;
     losses.textContent = lossCount;
     ties.textContent = tieCount;
-    result.textContent = "Choose your weapon!";
+    result.textContent = "Press Start!";
     document.querySelector(".userChoice img").src = "icon-user.png";
     document.querySelector(".computerChoice img").src = "icon-computer.png";
     // Disable the choice buttons after resetting the game
