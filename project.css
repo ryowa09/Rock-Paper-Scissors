@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background: #292929;
+    color: #b0b0b0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.game-result {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-result .weapon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 11px;
+}
+
+.game-result img {
+    height: 200px;
+    width: 200px;
+}
+
+.choice-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.choice-container button {
+    cursor: pointer;
+    background-color: #121212;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.choices {
+    height: 80px;
+    width: 80px;
+}
+
+.choice-container button:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+#startBtn {
+    background-color: rgb(0,120,212);
+    width: 63%;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#resetBtn {
+    background-color: rgb(0,120,212);
+    width: 63%;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
