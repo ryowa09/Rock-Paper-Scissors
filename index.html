@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="project.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        
+        <div class="scoreboard">
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+        </div>
+
+        <div class="game-result">
+            <h2 id="result">Welcome! Press start!</h2>
+            <div class="weapon-container">
+                <div class="userChoice">
+                    <img src="icon-user.png">
+                </div>
+
+                <h3>VS</h3>
+
+                <div class="computerChoice" id="npcChoice">
+                    <img src="icon-computer.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="choice-container">
+            <button onclick="startGame('ROCK')" id="choiceBtn" disabled>
+                <img src="icon-rock.png" class="choices">
+            </button>
+
+            <button onclick="startGame('PAPER')"id="choiceBtn" disabled>
+                <img src="icon-paper.png" class="choices">
+            </button>
+            
+            <button onclick="startGame('SCISSORS')"id="choiceBtn" disabled>
+                <img src="icon-scissors.png" class="choices">
+            </button>
+        </div>
+
+        <button id="startBtn">Start Game</button>
+        <button id="resetBtn">Reset Game</button>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
